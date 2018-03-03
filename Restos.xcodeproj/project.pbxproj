@@ -14,6 +14,18 @@
 		B4B6DE5520472F4900CA4AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B6DE5320472F4900CA4AFC /* LaunchScreen.storyboard */; };
 		B4B6DE6020472F4900CA4AFC /* RestosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6DE5F20472F4900CA4AFC /* RestosTests.swift */; };
 		B4B6DE6B20472F4900CA4AFC /* RestosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6DE6A20472F4900CA4AFC /* RestosUITests.swift */; };
+		B4B6DE7920472FB200CA4AFC /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B4B6DE7820472FB200CA4AFC /* Cartfile */; };
+		B4B6DE7F204739DA00CA4AFC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B6DE7C204739DA00CA4AFC /* Alamofire.framework */; };
+		B4B6DE80204739DA00CA4AFC /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B6DE7D204739DA00CA4AFC /* AlamofireImage.framework */; };
+		B4B6DE81204739DA00CA4AFC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B6DE7E204739DA00CA4AFC /* SwiftyJSON.framework */; };
+		B4B6DE8520473A8700CA4AFC /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6DE8420473A8700CA4AFC /* APIConstants.swift */; };
+		B4E5444D20473BC80029FA15 /* DTOBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E5444C20473BC80029FA15 /* DTOBaseModel.swift */; };
+		B4E5444F204742AF0029FA15 /* DTOBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E5444E204742AF0029FA15 /* DTOBranch.swift */; };
+		B4E544512047460F0029FA15 /* DTOBranchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E544502047460F0029FA15 /* DTOBranchList.swift */; };
+		B4E54454204747000029FA15 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E54453204747000029FA15 /* BaseService.swift */; };
+		B4E54458204747480029FA15 /* BranchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E54457204747480029FA15 /* BranchService.swift */; };
+		B4E5445A2047490B0029FA15 /* RestosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E544592047490B0029FA15 /* RestosViewController.swift */; };
+		B4E5445C2047E5A10029FA15 /* RestoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E5445B2047E5A10029FA15 /* RestoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		B4B6DE6620472F4900CA4AFC /* RestosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B6DE6A20472F4900CA4AFC /* RestosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestosUITests.swift; sourceTree = "<group>"; };
 		B4B6DE6C20472F4900CA4AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B6DE7820472FB200CA4AFC /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		B4B6DE7C204739DA00CA4AFC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B4B6DE7D204739DA00CA4AFC /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		B4B6DE7E204739DA00CA4AFC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		B4B6DE8420473A8700CA4AFC /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		B4E5444C20473BC80029FA15 /* DTOBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOBaseModel.swift; sourceTree = "<group>"; };
+		B4E5444E204742AF0029FA15 /* DTOBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOBranch.swift; sourceTree = "<group>"; };
+		B4E544502047460F0029FA15 /* DTOBranchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOBranchList.swift; sourceTree = "<group>"; };
+		B4E54453204747000029FA15 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		B4E54457204747480029FA15 /* BranchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchService.swift; sourceTree = "<group>"; };
+		B4E544592047490B0029FA15 /* RestosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestosViewController.swift; sourceTree = "<group>"; };
+		B4E5445B2047E5A10029FA15 /* RestoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B6DE7F204739DA00CA4AFC /* Alamofire.framework in Frameworks */,
+				B4B6DE80204739DA00CA4AFC /* AlamofireImage.framework in Frameworks */,
+				B4B6DE81204739DA00CA4AFC /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +104,12 @@
 		B4B6DE3E20472F4900CA4AFC = {
 			isa = PBXGroup;
 			children = (
+				B4B6DE7820472FB200CA4AFC /* Cartfile */,
 				B4B6DE4920472F4900CA4AFC /* Restos */,
 				B4B6DE5E20472F4900CA4AFC /* RestosTests */,
 				B4B6DE6920472F4900CA4AFC /* RestosUITests */,
 				B4B6DE4820472F4900CA4AFC /* Products */,
+				B4B6DE7B204739DA00CA4AFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +126,12 @@
 		B4B6DE4920472F4900CA4AFC /* Restos */ = {
 			isa = PBXGroup;
 			children = (
+				B4B6DE8220473A5600CA4AFC /* Common */,
+				B4B6DE8620473AC300CA4AFC /* Resources */,
+				B4B6DE8820473AE500CA4AFC /* Model */,
+				B4B6DE8920473AF700CA4AFC /* View */,
+				B4B6DE8A20473B0300CA4AFC /* Controller */,
+				B4B6DE8B20473B1700CA4AFC /* Service */,
 				B4B6DE4A20472F4900CA4AFC /* AppDelegate.swift */,
 				B4B6DE4C20472F4900CA4AFC /* ViewController.swift */,
 				B4B6DE4E20472F4900CA4AFC /* Main.storyboard */,
@@ -125,6 +160,106 @@
 			path = RestosUITests;
 			sourceTree = "<group>";
 		};
+		B4B6DE7B204739DA00CA4AFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4B6DE7C204739DA00CA4AFC /* Alamofire.framework */,
+				B4B6DE7D204739DA00CA4AFC /* AlamofireImage.framework */,
+				B4B6DE7E204739DA00CA4AFC /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4B6DE8220473A5600CA4AFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B4B6DE8420473A8700CA4AFC /* APIConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B4B6DE8620473AC300CA4AFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4B6DE8720473AD400CA4AFC /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4B6DE8720473AD400CA4AFC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B4B6DE8820473AE500CA4AFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4E5444A20473B920029FA15 /* Base */,
+				B4E5444B20473B9F0029FA15 /* Resto */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4B6DE8920473AF700CA4AFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4E5445B2047E5A10029FA15 /* RestoCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4B6DE8A20473B0300CA4AFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E544592047490B0029FA15 /* RestosViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4B6DE8B20473B1700CA4AFC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B4E54452204746E90029FA15 /* Base */,
+				B4E54455204747210029FA15 /* Branch */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B4E5444A20473B920029FA15 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B4E5444C20473BC80029FA15 /* DTOBaseModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B4E5444B20473B9F0029FA15 /* Resto */ = {
+			isa = PBXGroup;
+			children = (
+				B4E5444E204742AF0029FA15 /* DTOBranch.swift */,
+				B4E544502047460F0029FA15 /* DTOBranchList.swift */,
+			);
+			path = Resto;
+			sourceTree = "<group>";
+		};
+		B4E54452204746E90029FA15 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B4E54453204747000029FA15 /* BaseService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B4E54455204747210029FA15 /* Branch */ = {
+			isa = PBXGroup;
+			children = (
+				B4E54457204747480029FA15 /* BranchService.swift */,
+			);
+			path = Branch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +270,7 @@
 				B4B6DE4320472F4900CA4AFC /* Sources */,
 				B4B6DE4420472F4900CA4AFC /* Frameworks */,
 				B4B6DE4520472F4900CA4AFC /* Resources */,
+				B4B6DE7A204738C700CA4AFC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -234,6 +370,7 @@
 			files = (
 				B4B6DE5520472F4900CA4AFC /* LaunchScreen.storyboard in Resources */,
 				B4B6DE5220472F4900CA4AFC /* Assets.xcassets in Resources */,
+				B4B6DE7920472FB200CA4AFC /* Cartfile in Resources */,
 				B4B6DE5020472F4900CA4AFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +391,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B4B6DE7A204738C700CA4AFC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4B6DE4320472F4900CA4AFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E5445A2047490B0029FA15 /* RestosViewController.swift in Sources */,
+				B4E5444F204742AF0029FA15 /* DTOBranch.swift in Sources */,
+				B4E5444D20473BC80029FA15 /* DTOBaseModel.swift in Sources */,
 				B4B6DE4D20472F4900CA4AFC /* ViewController.swift in Sources */,
 				B4B6DE4B20472F4900CA4AFC /* AppDelegate.swift in Sources */,
+				B4E54454204747000029FA15 /* BaseService.swift in Sources */,
+				B4E5445C2047E5A10029FA15 /* RestoCollectionViewCell.swift in Sources */,
+				B4E54458204747480029FA15 /* BranchService.swift in Sources */,
+				B4B6DE8520473A8700CA4AFC /* APIConstants.swift in Sources */,
+				B4E544512047460F0029FA15 /* DTOBranchList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +591,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Restos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = N.Y..Restos;
@@ -441,6 +609,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Restos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = N.Y..Restos;

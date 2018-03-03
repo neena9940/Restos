@@ -12,7 +12,7 @@ import SwiftyJSON
 class DTOBranch {
     
     var id:             Int64?
-    var nameFn:           String?
+    var nameFa:           String?
     var nameEn:           String?
     var address:       String?
     var logoUrl:         String?
@@ -28,14 +28,13 @@ class DTOBranch {
         guard let dictionary = jsonDictionary else {
             return
         }
-        
         mapping(jsonDictionary: dictionary)
     }
     
     func mapping(jsonDictionary : [String : JSON]) {
         
         id = jsonDictionary["id"]?.int64Value
-        nameFn = jsonDictionary["name_fa"]?.stringValue
+        nameFa = jsonDictionary["name_fa"]?.stringValue
         nameEn = jsonDictionary["name_en"]?.stringValue
         address = jsonDictionary["address"]?.stringValue
         logoUrl = jsonDictionary["logo_url"]?.stringValue

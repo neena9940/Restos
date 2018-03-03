@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Restos View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RestosViewController" customModule="Restos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ll3-pX-THM">
+                                <rect key="frame" x="0.0" y="66" width="375" height="248"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eJ4-Zu-pQw">
+                                    <size key="itemSize" width="143" height="157"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestoCollectionViewCell" id="Jtx-A0-U2E" customClass="RestoCollectionViewCell" customModule="Restos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45.5" width="143" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="143" height="157"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wMS-ul-dbP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="117"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فناپ پرداخت" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-Mj-4ld">
+                                                    <rect key="frame" x="8" y="125" width="127" height="24"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvj-M1-nNu">
+                                                    <rect key="frame" x="12" y="10" width="119" height="19.5"/>
+                                                    <color key="backgroundColor" red="0.81960784310000001" green="0.92549019610000005" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" red="0.774941836" green="0.21707561349999999" blue="0.81368371210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Pvj-M1-nNu" secondAttribute="trailing" constant="12" id="Bdy-EU-fla"/>
+                                            <constraint firstAttribute="trailing" secondItem="wMS-ul-dbP" secondAttribute="trailing" id="J4x-t5-3LV"/>
+                                            <constraint firstItem="wcb-Mj-4ld" firstAttribute="leading" secondItem="Jtx-A0-U2E" secondAttribute="leading" constant="8" id="KXM-to-Rtf"/>
+                                            <constraint firstItem="Pvj-M1-nNu" firstAttribute="top" secondItem="Jtx-A0-U2E" secondAttribute="top" constant="10" id="Nxc-Qy-IrW"/>
+                                            <constraint firstItem="Pvj-M1-nNu" firstAttribute="leading" secondItem="Jtx-A0-U2E" secondAttribute="leading" constant="12" id="QMn-sd-lfT"/>
+                                            <constraint firstItem="wMS-ul-dbP" firstAttribute="top" secondItem="Jtx-A0-U2E" secondAttribute="top" id="TaX-en-xVc"/>
+                                            <constraint firstItem="wcb-Mj-4ld" firstAttribute="top" secondItem="wMS-ul-dbP" secondAttribute="bottom" constant="8" id="YIX-3q-73w"/>
+                                            <constraint firstAttribute="bottom" secondItem="wMS-ul-dbP" secondAttribute="bottom" constant="40" id="ZiM-S6-zXe"/>
+                                            <constraint firstAttribute="bottom" secondItem="wcb-Mj-4ld" secondAttribute="bottom" constant="8" id="adV-J9-eSf"/>
+                                            <constraint firstItem="wMS-ul-dbP" firstAttribute="leading" secondItem="Jtx-A0-U2E" secondAttribute="leading" id="j2G-XP-X6J"/>
+                                            <constraint firstAttribute="trailing" secondItem="wcb-Mj-4ld" secondAttribute="trailing" constant="8" id="vPs-wf-u0j"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="distanceLabel" destination="Pvj-M1-nNu" id="kos-lH-v8O"/>
+                                            <outlet property="imageView" destination="wMS-ul-dbP" id="Lus-oH-aUP"/>
+                                            <outlet property="titleLabel" destination="wcb-Mj-4ld" id="eGW-Wz-k9I"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="57O-mN-Xbf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ewv-Dl-v3j"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="فهرست رستوران ها" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-pt-mQ0">
+                                <rect key="frame" x="16" y="20" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ll3-pX-THM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="HA9-sn-O7k"/>
+                            <constraint firstItem="ll3-pX-THM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Spz-Pz-4cA"/>
+                            <constraint firstItem="ll3-pX-THM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jEN-yy-qEW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ll3-pX-THM" secondAttribute="bottom" constant="369" id="oBi-UR-R7k"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="restosCollectionView" destination="ll3-pX-THM" id="Rdw-Ll-fIE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

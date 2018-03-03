@@ -24,9 +24,12 @@ class BranchService: BaseService {
         self.delegate = controller as? BranchServiceDelegate
         super.init()
     }
-    func getMovies() {
-        
+    func getRestos() {
+    
         let urlString = "\(ApiConstants.ApiUrl)public-api/v1/listings/by-coordinates?lng=51.4100159&lat=35.7574681"
+        
+        print(urlString)
+       // let myUrl = URL(string: urlString)
         
         let headers = Alamofire.SessionManager.defaultHTTPHeaders
         Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in

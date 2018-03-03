@@ -1,0 +1,5 @@
+
+github "Alamofire/Alamofire" ~> 4.6
+github "Alamofire/AlamofireImage" ~> 3.2
+github "SwiftyJSON/SwiftyJSON"
+

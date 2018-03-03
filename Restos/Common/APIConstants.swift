@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct ApiConstants {
+    static let ApiUrl       = "https://stage.reyhoon.com/"
+}
